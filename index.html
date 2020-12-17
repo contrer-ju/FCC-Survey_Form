@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">
+        Encuesta de satisfacción.
+      </h1>
+      <p id="description">
+        A continuación se presenta un mecanismo para conocer el grado de
+        satisfacción de los clientes y consumidores, mediante el uso de un
+        cuestionario especialmente creados para tal fin.
+      </p>
+      <br />
+    </header>
+    <fieldset>
+      <form id="survey-form">
+        <br />
+        <label for="name" id="name-label">Nombre: </label>
+        <input
+          type="text"
+          placeholder="Favor coloque su nombre completo"
+          id="name"
+          required
+        />
+        <br /><br />
+        <label for="email" id="email-label">Correo: </label>
+        <input
+          type="email"
+          placeholder="Favor coloque su correo electrónico"
+          id="email"
+          required
+        />
+        <br /><br />
+        <label for="number" id="number-label">Telefono: </label>
+        <input
+          type="number"
+          placeholder="Favor coloque su numero telefónico"
+          min="1000000"
+          max="9000000"
+          id="number"
+          required
+        />
+        <br /><br />
+        <label for="service">Elija su tipo de servicio:</label>
+        <select id="dropdown">
+          <option value="basico">Basico</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+          <option value="experto">Experto</option>
+        </select>
+        <br />
+        <p>Elija una o varias:</p>
+        <input type="radio" name="attribute" id="opcion1" value="opcion1" />
+        <label for="opcion1">Primera opción</label>
+        <br />
+        <input type="radio" name="attribute" id="opcion2" value="opcion2" />
+        <label for="opcion2">Segunda opción</label>
+        <br />
+        <input type="radio" name="attribute" id="opcion3" value="opcion3" />
+        <label for="opcion3">Tercera opción</label>
+        <br />
+        <input type="radio" name="attribute" id="opcion4" value="opcion4" />
+        <label for="opcion4">Cuarta opción</label>
+        <br />
+        <input type="radio" name="attribute" id="opcion5" value="opcion5" />
+        <label for="opcion5">Quinta opción</label>
+        <br />
+        <p>Cuales recomendaciones aplicarías:</p>
+        <label>
+          <input type="checkbox" name="checkbox" value="recomenda1" />
+          Primera recomendación</label
+        >
+        <br />
+        <label>
+          <input type="checkbox" name="checkbox" value="recomenda2" />
+          Segunda recomendación</label
+        >
+        <br />
+        <label>
+          <input type="checkbox" name="checkbox" value="recomenda3" />
+          Tercera recomendación</label
+        >
+        <br />
+        <label>
+          <input type="checkbox" name="checkbox" value="recomenda4" />
+          Cuarta recomendación</label
+        >
+        <br />
+        <p>Favor mencionar alguna recomendación adicional:</p>
+        <textarea
+          id="comments"
+          name="comment"
+          placeholder="Favor ingrese sus recomendaciones o comentarios."
+        ></textarea
+        ><br /><br />
+        <button id="submit">Enviar</button>
+      </form>
+    </fieldset>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
