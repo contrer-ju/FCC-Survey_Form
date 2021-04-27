@@ -1,12 +1,19 @@
 body {
   font-family: sans-serif;
+  background: lightgray;
+  max-width: 90vh;
+  margin: auto;
 }
 
 #title {
-  background: lightgray;
+  background: gray;
   font-size: 3vh;
   color: black;
   text-align: center;
+}
+
+#fieldset {
+  background: white;
 }
 
 #name {
